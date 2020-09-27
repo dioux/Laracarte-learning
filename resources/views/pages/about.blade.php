@@ -1,7 +1,7 @@
-@extends('layouts.default', ['title' => 'About')
+@extends('layouts.default', ['title' => 'About'])
 @section('content')
     <div class="container">
-        <h2>What is Laracarte?</h2>
+        <h2>What is {{ config('app.name') }}</h2>
         <p>Laracarte is a clone app of Laramap</p>
         <div class="alert alert-warning col-md-6" role="alert">
             A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
