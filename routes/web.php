@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ContactsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ use App\Http\Controllers\PagesController;
 
 Route::get('/', [PagesController::class, 'home'])->name('root_path');
 Route::get('/about', [PagesController::class, 'about'])->name('about_path');
+Route::get('/contact', [ContactsController::class, 'create'])->name('contact_path');

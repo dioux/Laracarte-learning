@@ -15,9 +15,6 @@
         <li class="nav-item">
             <a class="nav-link" href="#">Artisan</a>
           </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Planet</a>
           <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -30,8 +27,8 @@
           </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-        </li>
+          <a class="nav-link" href="{{ route('contact_path')}}"">Contact</a>
+      </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item">
