@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ContactsController;
+use App\Mail\ContactMassageCreate;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,6 @@ use App\Http\Controllers\ContactsController;
 Route::get('/', [PagesController::class, 'home'])->name('root_path');
 Route::get('/about', [PagesController::class, 'about'])->name('about_path');
 Route::get('/contact', [ContactsController::class, 'create'])->name('contact_path');
+Route::get('/test-email', function () {
+    return new ContactMassageCreate("Diadie", "dioux86@gmail.ca", "Je vous remercie pour laracarte");
+});
